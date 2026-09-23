@@ -204,10 +204,10 @@ export const App: React.FC = () => {
           backgroundColor: '#FFFFFF'
         }}>
           <p>
-            Autonomous Multi-Modal Identity & Eligibility Verification Gateway • Swiss FinTech Standards
+            <strong style={{ color: '#0F172A' }}>FinTrust.ai</strong> • Autonomous Multi-Modal Identity & Eligibility Verification Gateway
           </p>
           <p style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: '#2563EB', fontWeight: 500 }}>
-            Clean Swiss FinTech • Minimalist Light
+            FinTrust.ai Engine • Production v2.5.0
           </p>
         </footer>
       </div>

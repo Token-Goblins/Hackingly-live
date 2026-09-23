@@ -1,9 +1,9 @@
 <div align="center">
 
-# 🛡️ Hackingly AI Identity & Eligibility Trust Engine
-### *Autonomous Multi-Engine Forensic Verification, Biometric Face Match & Sybil Defense System for Large-Scale Hackathons*
+# 🛡️ fintrust.ai
+### *Autonomous Multi-Engine Forensic Verification, Biometric Face Match & Sybil Defense System*
 
-[![Build & Audit](https://img.shields.io/badge/System%20Audit-49%2F49%20PASSED%20(100%25)-00C853?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/Token-Goblins/Hackingly-live)
+[![System Audit](https://img.shields.io/badge/System%20Audit-49%2F49%20PASSED%20(100%25)-00C853?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/Token-Goblins/Hackingly-live)
 [![Unit Tests](https://img.shields.io/badge/Test%20Suite-15%2F15%20PASSED-00E676?style=for-the-badge&logo=vitest&logoColor=white)](https://github.com/Token-Goblins/Hackingly-live)
 [![Frontend](https://img.shields.io/badge/Frontend-React%2019%20%7C%20Vite%208%20%7C%20TypeScript-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://github.com/Token-Goblins/Hackingly-live)
 [![Backend](https://img.shields.io/badge/Backend-Node.js%20%7C%20Express%205-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://github.com/Token-Goblins/Hackingly-live)
@@ -11,10 +11,10 @@
 [![UIDAI Security](https://img.shields.io/badge/UIDAI-Verhoeff%20Checksum-blueviolet?style=for-the-badge&logo=shield&logoColor=white)](https://github.com/Token-Goblins/Hackingly-live)
 
 <p align="center">
-  <b>Eliminating registration fraud, forged student IDs, Sybil syndicate attacks, and false rejections at national-scale hackathons with sub-second AI verification and cryptographic venue check-ins.</b>
+  <b>Eliminating registration fraud, forged student IDs, Sybil syndicate attacks, and false rejections with sub-second AI verification and cryptographic venue check-ins.</b>
 </p>
 
-[✨ Live Demo Highlights](#-key-capabilities) •
+[✨ Live Features](#-key-capabilities) •
 [🏗️ System Architecture](#️-system-architecture) •
 [🧪 Test Vectors (100% Pass)](#-tested-scenarios--vectors) •
 [🚀 Quick Start](#-quick-start-guide) •
@@ -27,13 +27,13 @@
 
 ## 📌 Executive Summary & Problem Solved (PS-003)
 
-Organizers of premier hackathons face critical vulnerabilities during registration and on-site gate check-in:
-1. **Photoshop & Canva Forgeries**: Students alter graduation years on College IDs or birth years on government IDs to bypass eligibility limits.
+Organizers of premier events, hackathons, and institutional programs face critical vulnerabilities during registration and gate check-in:
+1. **Photoshop & Canva Forgeries**: Applicants alter graduation years on College IDs or birth years on government IDs to bypass eligibility limits.
 2. **Sybil & Syndicate Attacks**: The same individual or group registers under multiple aliases or switches teams using the same ID credentials.
 3. **Impersonation**: Attackers submit high-trust IDs belonging to friends or web captures while uploading their own selfie.
 4. **Catastrophic False Rejections**: Crude automated filters reject real participants due to lighting/shadows or minor name variations (e.g. *Aditya K.* vs *Aditya Kumar*), frustrating attendees.
 
-**Hackingly AI Trust Engine** provides an end-to-end, dual-engine AI verification ecosystem featuring **mathematical checksum verification (Verhoeff)**, **Error Level Analysis (ELA)**, **biometric facial landmark similarity**, **graph-based Sybil tracking**, and an **institutional human-in-the-loop review queue** to guarantee **Zero False-Positive auto-rejections**.
+**fintrust.ai** provides an end-to-end, dual-engine AI verification ecosystem featuring **mathematical checksum verification (Verhoeff)**, **Error Level Analysis (ELA)**, **biometric facial landmark similarity**, **graph-based Sybil tracking**, and an **institutional human-in-the-loop review queue** to guarantee **Zero False-Positive auto-rejections**.
 
 ---
 
@@ -83,7 +83,7 @@ Organizers of premier hackathons face critical vulnerabilities during registrati
     <td width="50%">
       <h3>🎟️ Cryptographic Event Pass & Gate Check-In</h3>
       <ul>
-        <li>Generates high-resolution digital participant tickets with tamper-evident QR codes and HMAC-SHA256 signatures.</li>
+        <li>Generates high-resolution digital participant tickets with tamper-evident QR codes and HMAC signatures.</li>
         <li>Integrated on-site venue scanner verifies attendee status at registration desks in &lt;150ms.</li>
       </ul>
     </td>
@@ -109,7 +109,7 @@ flowchart TD
         ConfigCtrl[Event Rules & AI Providers Config]
     end
 
-    subgraph CoreEngine ["Hackingly AI Trust Pipeline"]
+    subgraph CoreEngine ["fintrust.ai Trust Pipeline"]
         direction TB
         V1["1. UIDAI Verhoeff Validator\n(Dihedral D5 Checksum)"]
         V2["2. Dual-Engine OCR\n(AWS Textract / Gemini Vision)"]
@@ -121,7 +121,7 @@ flowchart TD
 
     subgraph DecisionMatrix ["Zero False Positive Decision Engine"]
         AutoApprove["VERIFIED (Score >= 80%)\nIssued Cryptographic Ticket"]
-        ReviewQueue["REVIEW_NEEDED (Score 55%-79%)\nOrganizer 1-Click Review"]
+        ReviewQueue["REVIEW_NEEDED (Score 55%-79%)\nCompliance 1-Click Review"]
         AutoReject["REJECTED (Score < 55%)\nSpecific Fraud Reason Flagged"]
     end
 
@@ -138,7 +138,7 @@ flowchart TD
 
 ## 🧪 Tested Scenarios & Vectors
 
-The engine comes preloaded with **8 comprehensive test vectors** replicating real-world hackathon registration submissions:
+The engine comes preloaded with **8 comprehensive test vectors** replicating real-world registration submissions:
 
 | Vector ID | Applicant | Document Type | Test Condition / Scenario | Expected Outcome | Forensic Score |
 | :--- | :--- | :--- | :--- | :---: | :---: |
@@ -258,9 +258,9 @@ GET /api/health
 ```json
 {
   "status": "ONLINE",
-  "service": "Hackingly AI Identity & Eligibility Trust Engine",
+  "service": "fintrust.ai Identity & Eligibility Trust Engine",
   "version": "2.5.0-production",
-  "activeEvent": "Hackingly National Hackathon 2026",
+  "activeEvent": "AI Identity Verification Challenge",
   "aiServices": { "awsTextract": "CONNECTED", "geminiVision": "READY" }
 }
 ```
@@ -308,18 +308,16 @@ Content-Type: application/json
 
 ### 3. Venue Desk Gate QR Check-In
 ```http
-POST /api/venue-checkin
+POST /api/check-in/:id
 Content-Type: application/json
-
-{ "ticketId": "TKT-991204" }
 ```
 
-### 4. Organizer Review Decision Override
+### 4. Compliance Review Decision Override
 ```http
-POST /api/registrations/:id/decision
+POST /api/registrations/:id/action
 Content-Type: application/json
 
-{ "decision": "VERIFIED", "reviewerNotes": "Approved by Organizer Desk" }
+{ "action": "VERIFIED", "notes": "Approved by fintrust.ai Compliance Desk" }
 ```
 
 ### 5. Export Registrations to CSV
@@ -362,18 +360,18 @@ Any attempt to re-register under another alias automatically flags a **Sybil Att
 ## 📁 Repository Directory Structure
 
 ```
-Hackingly-live/
+fintrust.ai/
 ├── client/                      # React 19 Frontend Application
 │   ├── public/                  # Static assets and favicons
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── AdminDashboard.tsx      # Organizer command center & metrics
+│   │   │   ├── AdminDashboard.tsx      # Compliance & organizer command center
 │   │   │   ├── AiConfigModal.tsx       # AWS / Gemini credentials settings
 │   │   │   ├── ParticipantPortal.tsx   # Live registration & verification form
 │   │   │   ├── ParticipantTicket.tsx   # Digital cryptographic pass with QR
 │   │   │   ├── RulesModal.tsx          # Dynamic event eligibility config
-│   │   │   ├── Sidebar.tsx             # FinTech navigation & status triggers
-│   │   │   └── TestCasesDrawer.tsx     # 8 interactive Hackathon test vectors
+│   │   │   ├── Sidebar.tsx             # FinTrust.ai navigation & status triggers
+│   │   │   └── TestCasesDrawer.tsx     # 8 interactive test vectors
 │   │   ├── App.tsx                     # Main application layout & state
 │   │   ├── index.css                   # Modern styling & design system
 │   │   ├── types.ts                    # TypeScript data definitions
@@ -408,5 +406,5 @@ Hackingly-live/
 
 ## 🤝 Contributing & License
 
-Developed with ❤️ for **Hackingly Live**. Distributed under the **MIT License**.
+Developed with ❤️ for **fintrust.ai**. Distributed under the **MIT License**.
 Contributions, pull requests, and feature suggestions are welcome!

@@ -51,7 +51,7 @@ class GeminiVisionService {
     }
 
     try {
-      const prompt = `You are a forensic identity document expert for Hackingly hackathons.
+      const prompt = `You are a forensic identity document expert for fintrust.ai.
 Evaluate this Indian identity document and selfie for the applicant "${applicantName}".
 Check:
 1. Is the document genuine or digitally altered (check for mismatched fonts, edited DOB, clone patches)?

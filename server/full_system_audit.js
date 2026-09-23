@@ -51,7 +51,7 @@ function assert(condition, message) {
 
 async function runFullAudit() {
   console.log('\n=============================================================');
-  console.log('🛡️  HACKINGLY PS-003: FULL SYSTEM & SECURITY AUDIT (100% COVERAGE)');
+  console.log('🛡️  FINTRUST.AI PS-003: FULL SYSTEM & SECURITY AUDIT (100% COVERAGE)');
   console.log('=============================================================\n');
 
   // 1. Core Health & Capabilities

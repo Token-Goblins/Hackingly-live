@@ -27,7 +27,7 @@ let currentEventConfig = { ...DEFAULT_EVENT_CONFIG };
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ONLINE',
-    service: 'Hackingly AI Identity & Eligibility Trust Engine',
+    service: 'fintrust.ai Identity & Eligibility Trust Engine',
     version: '2.5.0-production',
     activeEvent: currentEventConfig.eventName,
     aiServices: {
@@ -246,7 +246,7 @@ app.post('/api/verify', async (req, res) => {
   }
 });
 
-// 5. Drop-in AWS Textract Adapter Endpoint for Hackingly
+// 5. Drop-in AWS Textract Adapter Endpoint for fintrust.ai
 app.post('/api/v1/adapters/aws-textract', async (req, res) => {
   try {
     const {
@@ -317,11 +317,11 @@ app.post('/api/registrations/:id/action', (req, res) => {
   const { action, notes } = req.body;
 
   let targetStatus = 'VERIFIED';
-  let reason = notes || 'Manually approved by Hackingly Organizer.';
+  let reason = notes || 'Manually approved by fintrust.ai Compliance Officer.';
 
   if (action === 'REJECT') {
     targetStatus = 'REJECTED';
-    reason = notes || 'Manually rejected by Hackingly Organizer upon document review.';
+    reason = notes || 'Manually rejected by fintrust.ai Compliance Officer upon document review.';
   } else if (action === 'REQUEST_REUPLOAD') {
     targetStatus = 'REVIEW_NEEDED';
     reason = notes || 'Organizer requested clearer re-upload (blur/glare or unreadable field).';
@@ -372,7 +372,7 @@ app.post('/api/check-in/:id', (req, res) => {
 
   res.json({
     success: true,
-    message: `Participant ${record.name} successfully checked in at Hackathon venue!`,
+    message: `Participant ${record.name} successfully checked in at fintrust.ai verified desk!`,
     record
   });
 });
@@ -399,7 +399,7 @@ app.get('/api/export-csv', (req, res) => {
   const csvContent = [headers.join(','), ...rows.map(row => row.join(','))].join('\n');
 
   res.setHeader('Content-Type', 'text/csv');
-  res.setHeader('Content-Disposition', 'attachment; filename="hackingly_verified_roster.csv"');
+  res.setHeader('Content-Disposition', 'attachment; filename="fintrust_verified_roster.csv"');
   res.send(csvContent);
 });
 
@@ -452,5 +452,5 @@ app.post('/api/reset-demo', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`[Hackingly AI Trust Engine] Server running on http://localhost:${PORT}`);
+  console.log(`[fintrust.ai Trust Engine] Server running on http://localhost:${PORT}`);
 });

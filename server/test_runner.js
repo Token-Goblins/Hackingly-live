@@ -1,4 +1,4 @@
-// Automated Test Suite for Hackingly AI Trust Engine (PS-003)
+// Automated Test Suite for fintrust.ai Trust Engine (PS-003)
 const assert = require('assert');
 const { validateAadhaar, validateVerhoeff } = require('./services/verhoeff');
 const { parseDocument, detectDocumentType } = require('./services/documentParser');
@@ -25,7 +25,7 @@ function it(desc, fn) {
 
 async function runAllTests() {
   console.log('\n======================================================');
-  console.log('🧪 RUNNING HACKINGLY TRUST ENGINE TEST SUITE');
+  console.log('🧪 RUNNING FINTRUST.AI TRUST ENGINE TEST SUITE');
   console.log('======================================================\n');
 
   console.log('1. UIDAI Verhoeff Checksum Validator:');

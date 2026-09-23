@@ -1,7 +1,7 @@
 {
-  "name": "hackathon",
+  "name": "fintrust-ai",
   "version": "1.0.0",
-  "description": "",
+  "description": "fintrust.ai — Autonomous AI Identity & Eligibility Trust Engine",
   "main": "index.js",
   "scripts": {
     "server": "node server/index.js",

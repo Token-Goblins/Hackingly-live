@@ -61,7 +61,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
             <span style={{ fontSize: '16px', fontWeight: 700, color: '#0F172A', letterSpacing: '-0.02em' }}>
-              FinTrust<span style={{ color: '#2563EB' }}>.ID</span>
+              FinTrust<span style={{ color: '#2563EB' }}>.ai</span>
             </span>
           </div>
           <p style={{ fontSize: '11px', color: '#64748B', fontWeight: 500 }}>

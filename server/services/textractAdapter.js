@@ -110,7 +110,7 @@ function createMockTextractBlocks(textLines) {
 
 /**
  * Main drop-in adapter pipeline
- * Takes Hackingly's current Textract payload + registration details -> produces enriched verdict
+ * Takes fintrust.ai's current Textract payload + registration details -> produces enriched verdict
  */
 function processTextractVerification({
   textractBlocks,
@@ -158,7 +158,7 @@ function processTextractVerification({
     eventConfig
   });
 
-  // 7. Backward-compatible payload for Hackingly's existing system
+  // 7. Backward-compatible payload for fintrust.ai's existing system
   // (Provides legacy fields like 'extractedDOB' and 'isAgeValid' alongside enhanced security)
   return {
     success: true,
